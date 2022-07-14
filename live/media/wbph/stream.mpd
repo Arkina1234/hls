@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MPD id="" profiles="urn:mpeg:dash:profile:isoff-main:2011" type="static" availabilityStartTime="2015-08-04T09:33:14.000Z" publishTime="2015-08-04T10:47:32.000Z" mediaPresentationDuration="P0Y0M0DT0H3M30.000S" minBufferTime="P0Y0M0DT0H0M1.000S" bitmovin:version="1.6.0" xmlns:ns2="http://www.w3.org/1999/xlink" xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:bitmovin="">
+    <Period>
+        <AdaptationSet mimeType="video/mp4" codecs="avc1.42c00d">
+            <SegmentTemplate media="http://84.17.44.163:8080/live%2bheartstreamtv_lighthousetv_lighthousetv.mp4" initialization="http://84.17.44.163:8080/live%2bheartstreamtv_lighthousetv_lighthousetv.mp4" duration="100000" startNumber="0" timescale="25000"/>
+            <Representation id="720_2400000" bandwidth="2400000" width="1280" height="720" frameRate="60"/>
+        </AdaptationSet>
+    </Period>
+</MPD>
