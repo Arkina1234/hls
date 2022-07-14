@@ -1,0 +1,6 @@
+#EXTM3U
+#EXT-X-TARGETDURATION:43200
+#EXT-X-VERSION:4
+#EXT-X-MEDIA-SEQUENCE:1
+#EXTINF:43200.0,
+http://84.17.44.163:8080/live%2bheartstreamtv_lighthousetv_lighthousetv.ts
