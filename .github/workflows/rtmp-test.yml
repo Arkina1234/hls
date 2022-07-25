@@ -14,4 +14,4 @@ jobs:
       - uses: actions/checkout@v3
       - uses: FedericoCarboni/setup-ffmpeg@v1
         id: setup-ffmpeg
-      - run: ffmpeg -stream_loop -1 -i "https://github.com/Arkina1234/hls/raw/gh-pages/test/SMPTE-HD.mp4" -deinterlace -vcodec libx264 -pix_fmt yuv420p -preset ultrafast -r 30 -g 30 * 2 -b:v 500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -bufsize 512k -f flv "rtmp://origin.nstream.to/cast?publishsign=aWQ9NDE1JnNpZ249ODlmSzZxZzRXV1JBWkRLRHZIZ3NHZz09"
+      - run: ffmpeg -stream_loop -1 -i "https://github.com/Arkina1234/hls/raw/gh-pages/test/SMPTE-HD.mp4" -vcodec libx264 -pix_fmt yuv420p -preset ultrafast -r 30 -g 30 * 2 -b:v 500k -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -bufsize 512k -f flv "rtmp://origin.nstream.to/cast?publishsign=aWQ9NDE1JnNpZ249ODlmSzZxZzRXV1JBWkRLRHZIZ3NHZz09"
