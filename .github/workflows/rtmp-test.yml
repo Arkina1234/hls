@@ -8,19 +8,16 @@ on:
   pull_request:
     branches: [ "gh-pages" ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch: true
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
+  load:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: Setup FFmpeg
       - uses: actions/checkout@v3
-      - uses: FedericoCarboni/setup-ffmpeg@v1.1.0
+      - uses: FedericoCarboni/setup-ffmpeg@v1
         id: setup-ffmpeg
       - run: |
           FPS=30
