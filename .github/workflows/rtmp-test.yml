@@ -4,7 +4,9 @@ on:
     branches: [ "gh-pages" ]
   pull_request:
     branches: [ "gh-pages" ]
-  workflow_dispatch: true
+  workflow_dispatch: 
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   load:
     runs-on: ubuntu-latest
