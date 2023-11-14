@@ -1,0 +1,8 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=5000000,NAME="High"
+https://hls-live-media.cdn01.net/dvr/stream_37099_1.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=2225000,NAME="Medium"
+https://hls-live-media.cdn01.net/dvr/stream_37099_2.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1,BANDWIDTH=1250000,NAME="Low"
+https://hls-live-media.cdn01.net/dvr/stream_37099_3.m3u
